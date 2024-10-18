@@ -237,7 +237,15 @@ ext2spice
 
 ## f) Identify issues in the DRC section of the old Magic tech file for the SkyWater process and resolve them.
 
+![p1](https://github.com/user-attachments/assets/9a36e9b1-a2eb-43eb-9eeb-a3346229fcd8)
 
+![p2](https://github.com/user-attachments/assets/27da3f8e-097a-4002-b286-dbf4a72d1fdc)
+
+![p3](https://github.com/user-attachments/assets/e2d244a7-12cd-4b13-bf5c-9e047a073956)
+
+![p4](https://github.com/user-attachments/assets/4e6a6086-5a0d-4c09-80b2-b4804093197c)
+
+![p5](https://github.com/user-attachments/assets/c3d19792-c6e2-40d4-86db-35fa5c887daf)
 
 
 
