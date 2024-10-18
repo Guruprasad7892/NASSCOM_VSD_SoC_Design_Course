@@ -472,4 +472,10 @@ now run the synthesis,floorplan,placement and cts
 now generate pdn using the command  gen_pdn
 ```
 
+![n1](https://github.com/user-attachments/assets/d6deb9ac-1ed0-44d1-b45b-f2370bc0ff6f)
 
+```
+now run the routing using the command run_routing
+
+check for drc violations
+```
