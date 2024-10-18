@@ -213,7 +213,20 @@ ext2spice
 ![3](https://github.com/user-attachments/assets/45bf77dc-5a95-4d2a-b7f9-850e757eef77)
 
 ### 80%
+![5](https://github.com/user-attachments/assets/ce0bbd77-2724-417c-b3b8-da98c344ceaf)
 
+![6](https://github.com/user-attachments/assets/c7b6bc59-b103-4867-b0ee-997db9900cd5)
+
+![7](https://github.com/user-attachments/assets/253f9d10-a35a-45d4-b886-44b728a573ee)
+
+![8](https://github.com/user-attachments/assets/8c6b1ff4-b28a-4530-9ea7-896403fe5233)
+
+![9](https://github.com/user-attachments/assets/736a24dd-5dd0-4337-a058-f01d0b41b145)
+
+![10](https://github.com/user-attachments/assets/33ff10bb-0a17-4c93-bdb2-537ab7f735f8)
+
+
+### 50%
 
 
 
