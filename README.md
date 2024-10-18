@@ -227,6 +227,15 @@ ext2spice
 
 
 ### 50%
+![11](https://github.com/user-attachments/assets/6e07a9ea-f907-4afd-90b7-a0d41a473ee3)
+
+![12](https://github.com/user-attachments/assets/357fcaae-0f48-4822-9539-09b601d1e3e9)
+
+![13](https://github.com/user-attachments/assets/ad14aacb-1609-42c9-a809-dae6ebfa5d01)
+
+![14](https://github.com/user-attachments/assets/525304e2-1538-4e31-bea6-5204d108ace5)
+
+
 
 
 
