@@ -153,8 +153,8 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ### a) Cloning the custom inverter standard cell design from github repo
 ### b) Load the custom inverter layout in magic and explore.
 ### c) Spice extraction of inverter in magic
-### d) Editing the spice model file for analysis through simulation.
-### e) Post-layout ngspice simulation
+### d) Spice technology file, simulation and output graph
+### e) Parameters Calculation
 ### f) Identify issues in the DRC section of the old Magic tech file for the SkyWater process and resolve them.
 
 ## a) Cloning the custom inverter standard cell design from github repo
@@ -196,6 +196,15 @@ ext2spice cthresh 0 rthresh 0
 command to convert ext to spice file format
 ext2spice
 ```
+![g1](https://github.com/user-attachments/assets/11f0838d-d7eb-418b-a0d3-6c501d1417de)
+
+## d) Spice technology file, simulation and output graph
+
+![g3](https://github.com/user-attachments/assets/78d9f796-46b4-459f-8e33-b57411dbccb0)
+
+![g2](https://github.com/user-attachments/assets/8be20974-7297-4b2b-8237-3000442560aa)
+
+## e) Parameters Calculation
 
 
 
