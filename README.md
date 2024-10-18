@@ -235,6 +235,8 @@ ext2spice
 
 ![14](https://github.com/user-attachments/assets/525304e2-1538-4e31-bea6-5204d108ace5)
 
+## f) Identify issues in the DRC section of the old Magic tech file for the SkyWater process and resolve them.
+
 
 
 
