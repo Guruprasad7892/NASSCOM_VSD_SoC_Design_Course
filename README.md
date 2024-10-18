@@ -206,6 +206,7 @@ ext2spice
 
 ## e) Parameters Calculation
 
+### 20% 
 
 
 
