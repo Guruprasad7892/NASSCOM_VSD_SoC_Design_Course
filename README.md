@@ -303,5 +303,59 @@ This condition is satisfied as the height is an even multiple.
 
 ![j4](https://github.com/user-attachments/assets/b5f7b145-b598-46ba-beeb-3877af400b69)
 
+```
+  # type the command in the tcl window
+  lef write
+```
+```
+# Copy lef file
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+# Copy lib files
+cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
+
+
+
+```
+prep -design picorv32a -tag 22-09_11-03
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
+
+
+
+
+
+
+
+
+
+
+
+```
+echo $::env(SYNTH_STRATEGY)
+
+#set new value for SYNTH_STRATEGY
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+#display current value of variable SYNTH_BUFFERING
+echo $::env(SYNTH_BUFFERING)
+echo $::env(SYNTH_SIZING)
+set ::env(SYNTH_SIZING) 1
+
+#display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
+echo $::env(SYNTH_DRIVING_CELL)
+```
+
+
+
+
+
+```
+init_floorplan
+place_io
+tap_decap_or
+```
+
 
  
