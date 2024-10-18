@@ -51,6 +51,9 @@ exit
 
 ![lab1_6](https://github.com/user-attachments/assets/1340e63d-f911-45a5-b07b-16c8794788e9)
 
+
+## b) Calculate the flop ratio.
+
 # Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 
 ## Tasks to be completed
@@ -86,4 +89,14 @@ run_synthesis
 // ready foe floorplan
 run_floorplan
 ```
+![lab2_1](https://github.com/user-attachments/assets/aa00bc36-65eb-4f3f-9d6c-f04954b5206d)
 
+![lab2_2](https://github.com/user-attachments/assets/12666406-9326-4e27-980d-9f12b2d5b99e)
+
+![lab2_3](https://github.com/user-attachments/assets/5dc76238-b3c7-4222-9aa0-e5a87fadd972)
+
+![lab2_4](https://github.com/user-attachments/assets/7b75692a-46fe-4981-95ad-b20853a0bfb7)
+
+![lab2_5](https://github.com/user-attachments/assets/747f5da6-7138-4b68-8cf2-0e1fbce45dc6)
+
+![lab2_6](https://github.com/user-attachments/assets/7c3ca205-1ad3-48a8-97e9-5e4dbd1475ee)
