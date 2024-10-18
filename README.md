@@ -145,5 +145,32 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/11-10
 // command to run placement def fie in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
+![rp2](https://github.com/user-attachments/assets/89dd76f3-dda5-4bb3-b494-73de08138d2d)
 
+# Day3 - 
 
+## Task to be completed
+### a) Cloning the custom inverter standard cell design from github repo
+### b) Load the custom inverter layout in magic and explore.
+### c) Spice extraction of inverter in magic
+### d) Editing the spice model file for analysis through simulation.
+### e) Post-layout ngspice simulation
+### f) Identify issues in the DRC section of the old Magic tech file for the SkyWater process and resolve them.
+
+## a) Cloning the custom inverter standard cell design from github repo
+```
+change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+enter command to clone github repo
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+after cloning change directory
+cd vsdstdcelldesign
+
+copying the Magic tech file in vsdstdcelldesign
+cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech 
+
+command to open custom inverter design in magic tool
+magic -T sky130A.tech sky130_inv.mag &
+```
