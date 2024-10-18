@@ -349,5 +349,16 @@ place_io
 tap_decap_or
 ```
 
+![g1](https://github.com/user-attachments/assets/f52db066-5c77-436a-9f28-946034b97bc7)
+
+![g2](https://github.com/user-attachments/assets/7d230cba-b779-4d1e-a5f5-b480745f7c0e)
+
+![g3](https://github.com/user-attachments/assets/c678a345-70be-4bb9-b5ac-d3138c139b55)
+
+![g4](https://github.com/user-attachments/assets/277a3e8d-4bb7-4696-9066-39cd594b16d9)
+
+```
+sta pre_sta.conf
+```
 
  
