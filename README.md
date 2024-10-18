@@ -122,3 +122,19 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/11-10
 // command to run floorlan def file in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
+![p1](https://github.com/user-attachments/assets/f0bf621b-18b7-48c9-8c35-b8c5bd372b67)
+
+![p2](https://github.com/user-attachments/assets/b36b045d-31b4-4a29-96ef-d04d43ead00c)
+
+![p3](https://github.com/user-attachments/assets/d4ac20a1-cbe4-448b-bd18-ec32cfed9bd4)
+
+![p4](https://github.com/user-attachments/assets/4498c388-51c2-4039-adcd-9f5cbcc688b9)
+
+![p5](https://github.com/user-attachments/assets/44d77364-22f4-4619-b686-9192d1dcf26e)
+
+## Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+
+
+
+
+
