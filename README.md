@@ -51,6 +51,12 @@ exit
 
 ![lab1_6](https://github.com/user-attachments/assets/1340e63d-f911-45a5-b07b-16c8794788e9)
 
+![s1](https://github.com/user-attachments/assets/cf15a91f-d29d-4d7d-bde6-0672f98f082e)
+
+### total no.of cells=14876
+### no.of d_ff=1613
+### flop_ratio=(1613/14876)=0.1084296853993009
+### Percentage= flop_ratio*100=10.84296853993009%
 
 ## b) Calculate the flop ratio.
 
