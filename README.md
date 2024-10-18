@@ -247,5 +247,56 @@ ext2spice
 
 ![p5](https://github.com/user-attachments/assets/c3d19792-c6e2-40d4-86db-35fa5c887daf)
 
+# Day4 - Pre-layout timing analysis and importance of good clock tree.
+
+## Task 1: Fix minor DRC errors and verify the design for flow insertion.
+```
+# Change directory to the vsdstdcelldesign folder
+cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```
+```
+# Open the custom inverter layout in Magic
+magic -T sky130A.tech sky130_inv.mag &
+```
+
+### Track Information of sky130_fd_sc_hd
+ a) The track information for the standard cell library sky130_fd_sc_hd is shown below. This will be used to verify the alignment and dimensions of the custom inverter cell.
 
 
+
+
+ ```
+# Get syntax for the grid command
+help grid
+```
+```
+# Set grid values for track alignment (locali layer)
+grid 0.46um 0.34um 0.23um 0.17um
+```
+
+
+
+
+### Condition 1: Port Alignment on Tracks
+
+Verified that the input and output ports of the custom inverter cell are aligned at the intersections of vertical and horizontal tracks.
+
+### Condition 2: Width Verification
+
+The width of the standard cell should be an odd multiple of the horizontal track pitch 0.46𝜇𝑚
+Horizontal track pitch=0.46 umWidth of standard cell=1.38 um=0.46×3
+
+
+
+
+
+
+### Condition 3: Height Verification
+
+The height of the standard cell should be an even multiple of the vertical track pitch 0.34𝜇𝑚
+Vertical track pitch=0.34 umHeight of standard cell=2.72 um=0.34×8
+
+This condition is satisfied as the height is an even multiple.
+
+This condition is satisfied as the width is an odd multiple.
+ 
