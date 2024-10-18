@@ -479,3 +479,51 @@ now run the routing using the command run_routing
 
 check for drc violations
 ```
+
+
+![n2](https://github.com/user-attachments/assets/b93d1406-c322-41bf-b0f0-86041984ee20)
+
+![n3](https://github.com/user-attachments/assets/e0782165-591c-4551-867d-c56d0c58448a)
+
+![n4](https://github.com/user-attachments/assets/e85656d3-c2e0-4919-ad7e-bdcd60eea13f)
+
+Post-Route parasitic extraction using SPEF extractor.
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/scripts/SPEF_EXTRACTOR
+
+# Command extract spef
+python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-09_11-03/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-09_11-03/results/routing/picorv32a.def
+```
+Post-Route OpenSTA timing analysis with the extracted parasitics of the route.
+
+```
+openroad
+read_lef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def
+write_db pico_route.db
+read_db pico_route.db
+
+read_verilog /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/synthesis/picorv32a.synthesis_preroute.v
+
+# Read library for design
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+
+# Link design and library
+link_design picorv32a
+
+# Read in the custom sdc we created
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+# Setting all cloks as propagated clocks
+set_propagated_clock [all_clocks]
+
+# Read SPEF
+read_spef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.spef
+
+# Generating custom timing report
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+# Exit to OpenLANE flow
+exit
+```
+
