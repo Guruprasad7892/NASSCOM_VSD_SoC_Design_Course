@@ -527,3 +527,9 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 exit
 ```
 
+
+![n5](https://github.com/user-attachments/assets/65b42450-f4da-47f1-a1c1-b847b8a17d13)
+
+![n6](https://github.com/user-attachments/assets/7491a239-de4d-4275-b751-253da630e5a9)
+
+![n7](https://github.com/user-attachments/assets/bd7275e4-7815-4db2-a6f3-36d22fdfcf97)
