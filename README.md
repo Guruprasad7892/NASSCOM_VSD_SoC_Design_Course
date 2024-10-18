@@ -174,3 +174,30 @@ cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/
 command to open custom inverter design in magic tool
 magic -T sky130A.tech sky130_inv.mag &
 ```
+![q1](https://github.com/user-attachments/assets/1ddda6c0-7f0a-4336-af23-5fc2b885e3e9)
+
+## b) Load the custom inverter layout in magic and explore.
+
+![q2](https://github.com/user-attachments/assets/e0281358-cd0a-4c21-8ab8-117476e2c344)
+
+![q3](https://github.com/user-attachments/assets/b6c3ea0a-c17a-44c0-bb62-deb4f01efce0)
+
+## c)  Spice extraction of inverter in magic
+```
+command to check directory in which you are present
+pwd
+
+command to run for extraction of file to .ext format
+extract all
+
+command to enable parasitic Extraction
+ext2spice cthresh 0 rthresh 0
+
+command to convert ext to spice file format
+ext2spice
+```
+
+
+
+
+
