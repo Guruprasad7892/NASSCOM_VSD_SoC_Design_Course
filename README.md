@@ -208,6 +208,12 @@ ext2spice
 
 ### 20% 
 
+![4](https://github.com/user-attachments/assets/2a26ee75-886d-4d9c-bc9e-126d2cf67747)
+
+![3](https://github.com/user-attachments/assets/45bf77dc-5a95-4d2a-b7f9-850e757eef77)
+
+### 80%
+
 
 
 
