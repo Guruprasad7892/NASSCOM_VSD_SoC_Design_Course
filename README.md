@@ -200,9 +200,7 @@ ext2spice
 
 ## d) Spice technology file, simulation and output graph
 
-![g3](https://github.com/user-attachments/assets/78d9f796-46b4-459f-8e33-b57411dbccb0)
 
-![g2](https://github.com/user-attachments/assets/8be20974-7297-4b2b-8237-3000442560aa)
 
 ## e) Parameters Calculation
 
