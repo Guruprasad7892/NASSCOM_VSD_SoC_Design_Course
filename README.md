@@ -313,18 +313,17 @@ cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/
 cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 ```
 
-![v1](https://github.com/user-attachments/assets/e0dbb646-ca3e-46e9-981d-8c34ea77300c)
-
+![v1](https://github.com/user-attachments/assets/a5433c8f-ca28-453d-91f7-9bd1c983f310)
 
 ```
 prep -design picorv32a -tag 22-09_11-03
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 ```
+![v2](https://github.com/user-attachments/assets/ff3f0272-338d-4d5c-ad30-59f360f3c980)
 
-![v2](https://github.com/user-attachments/assets/0e847c96-9bed-489b-99c4-6fe086177772)
 
-![v3](https://github.com/user-attachments/assets/a5b260ff-12d6-4a18-b4cd-b0e892e46960)
+![v3](https://github.com/user-attachments/assets/12ffb8cd-8c88-48af-b9e4-9e5fce66b375)
 
 
 ```
@@ -342,7 +341,7 @@ set ::env(SYNTH_SIZING) 1
 echo $::env(SYNTH_DRIVING_CELL)
 ```
 
-![v4](https://github.com/user-attachments/assets/fcc624b9-8a06-4346-9d46-1dcd38c32147)
+![v4](https://github.com/user-attachments/assets/a0062b7e-e06a-4b75-8087-c330662a005d)
 
 ```
 init_floorplan
