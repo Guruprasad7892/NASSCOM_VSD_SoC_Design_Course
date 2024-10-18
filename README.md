@@ -132,9 +132,18 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ![p5](https://github.com/user-attachments/assets/44d77364-22f4-4619-b686-9192d1dcf26e)
 
-## Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+## d) Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 
+![rp1](https://github.com/user-attachments/assets/45ed0bca-70d4-41d7-8527-d70ad6ba37c1)
 
+## e) Load generated placement def in magic tool and explore the placement.
 
+```
+// change directory to newly generated placement file in another terminal
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/11-10_06-41/results/placement/
+
+// command to run placement def fie in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
 
 
