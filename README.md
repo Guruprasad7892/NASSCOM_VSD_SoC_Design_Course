@@ -262,7 +262,8 @@ magic -T sky130A.tech sky130_inv.mag &
 ### Track Information of sky130_fd_sc_hd
  a) The track information for the standard cell library sky130_fd_sc_hd is shown below. This will be used to verify the alignment and dimensions of the custom inverter cell.
 
-![j1](https://github.com/user-attachments/assets/1b158b42-301d-497e-86f1-45d09a3ad9f5)
+
+![j1](https://github.com/user-attachments/assets/96a8ed1e-3112-40e6-97af-dcb83a2dc653)
 
 
  ```
@@ -274,10 +275,7 @@ help grid
 grid 0.46um 0.34um 0.23um 0.17um
 ```
 
-
-![j2](https://github.com/user-attachments/assets/1ff4153e-e433-4e22-8422-09c36d4a0378)
-
-
+![j2](https://github.com/user-attachments/assets/4437e224-781c-404e-8ac8-0a31467d2177)
 
 ### Condition 1: Port Alignment on Tracks
 
@@ -290,7 +288,8 @@ Horizontal track pitch=0.46 umWidth of standard cell=1.38 um=0.46×3
 
 This condition is satisfied as the width is an odd multiple.
 
-![j3](https://github.com/user-attachments/assets/df43db5b-da5a-49bf-bafd-193bbdf89c21)
+
+![j3](https://github.com/user-attachments/assets/24165e79-a614-4e21-98d9-a6026d439eb1)
 
 
 
