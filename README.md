@@ -51,3 +51,39 @@ exit
 
 ![lab1_6](https://github.com/user-attachments/assets/1340e63d-f911-45a5-b07b-16c8794788e9)
 
+# Day 2 - Good floorplan vs bad floorplan and introduction to library cells
+
+## Tasks to be completed
+### a) Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
+### b) Calculate the die area in microns from the values in floorplan def.
+### c) Open a new terminal to load the generated floorplan definition in the Magic tool and explore the layout.
+### d) Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+### e) Load generated placement def in magic tool and explore the placement.
+
+## a) Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
+```
+# Change directory to openlane flow directory
+ cd Desktop/work/tools/openlane_working_dir/openlane
+
+# alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e 
+PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+# Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command
+docker
+```
+```
+//invoke the OpenLANE flow in the Interactive mode using the following command
+./flow.tcl -interactive
+
+//input the required packages for proper functionality of the OpenLANE flow
+package require openlane 0.9
+
+//prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+prep -design picorv32a
+
+//Now that the design is prepped and ready, we can run synthesis
+run_synthesis
+
+// ready foe floorplan
+run_floorplan
+```
+
