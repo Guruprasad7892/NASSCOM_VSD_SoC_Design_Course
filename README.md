@@ -361,4 +361,115 @@ tap_decap_or
 sta pre_sta.conf
 ```
 
- 
+![c1](https://github.com/user-attachments/assets/76231d8e-84de-4864-830c-dbffc6ded866)
+
+![c2](https://github.com/user-attachments/assets/2e65d480-6725-425f-b88f-c36fa8c55e91)
+
+![c3](https://github.com/user-attachments/assets/2e9b4a69-b168-46c0-adbf-558b26ce07e9)
+
+![c4](https://github.com/user-attachments/assets/712d6665-0051-4748-8bf9-5489fa4e1b56)
+
+```
+
+write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/picorv32a.synthesis.v
+```
+
+```
+  
+openroad
+
+# Reading lef file
+read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef
+
+# Reading def file
+read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def
+
+# Creating an OpenROAD database to work with
+write_db pico_cts.db
+read_db pico_cts.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+
+# Read in the custom sdc we created
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+# Setting all clocks as propagated clocks
+set_propagated_clock [all_clocks]
+# Generating custom timing report
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+```
+```
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/placement/picorv32a.placement.def
+
+
+run_cts
+
+
+openroad
+
+
+read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef
+
+
+read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def
+
+
+write_db pico_cts1.db
+
+
+read_db pico_cts.db
+
+
+read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v
+
+
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+
+
+link_design picorv32a
+
+
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+
+set_propagated_clock [all_clocks]
+
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+report_clock_skew -hold
+
+report_clock_skew -setup
+
+# Exit to OpenLANE flow
+exit
+
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+# Inserting 'sky130_fd_sc_hd__clkbuf_1' to first index of list
+set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]
+
+# Checking current value of 'CTS_CLK_BUFFER_LIST'
+echo $::env(CTS_CLK_BUFFER_LIST)
+```
+# Day-5 
+
+```
+First go to the folder openlane
+
+run the docker
+
+run the command package require openlane 0.9 
+
+now prep -design picorv32a -tag 22-09_11-03
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+now run the synthesis,floorplan,placement and cts
+
+now generate pdn using the command  gen_pdn
+```
+
+
