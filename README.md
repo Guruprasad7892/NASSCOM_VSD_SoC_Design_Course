@@ -301,6 +301,7 @@ Vertical track pitch=0.34 umHeight of standard cell=2.72 um=0.34×8
 
 This condition is satisfied as the height is an even multiple.
 
-
 ![j4](https://github.com/user-attachments/assets/b5f7b145-b598-46ba-beeb-3877af400b69)
+
+
  
